@@ -1,0 +1,31 @@
+{
+  "name": "naoko-auth",
+  "version": "0.0.1",
+  "description": "Set of functions to achieve authentication in different services such as google, github, etc.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "scripts": {
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify terser",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiza-san/naoko-auth.git"
+  },
+  "author": "Aizawa-san <aizawa.dev@gmail.com>",
+  "keywords": [
+    "auth",
+    "authentication",
+    "naoko-auth",
+    "naoko"
+  ],
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
